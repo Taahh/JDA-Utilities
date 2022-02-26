@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 dependencies {
-    implementation jda()
+    compileOnly jda()
     implementation slf4j()
     implementation okhttp()
     implementation findbugs()

@@ -16,3 +16,6 @@
 dependencies {
     compileOnly jda()
 }
+javadoc {
+    exclude 'com/jagrosh/jdautilities/*'
+}

@@ -14,7 +14,10 @@
  * limitations under the License.
  */
 dependencies {
-    implementation jda()
+    compileOnly jda()
 
     implementation commons()
+}
+javadoc {
+    exclude 'com/jagrosh/jdautilities/*'
 }

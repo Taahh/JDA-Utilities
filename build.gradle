@@ -105,7 +105,6 @@ allprojects {
 //        dependsOn { javadocJar }
         dependsOn { sourceJar }
         dependsOn { shadowJar }
-        dependsOn { publishToMavenLocal }
     }
 
     publishing {
@@ -187,9 +186,9 @@ subprojects {
     publishing {
         publications {
             maven(MavenPublication) {
-                from components.java
                 artifact javadocJar
                 artifact sourceJar
+                from components.java
             }
         }
     }
