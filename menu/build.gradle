@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 dependencies {
-    compileOnly jda()
-    compile findbugs()
-    compile commons()
+    implementation jda()
+    implementation findbugs()
+    implementation commons()
 }

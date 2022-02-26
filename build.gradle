@@ -19,7 +19,7 @@ import org.apache.tools.ant.filters.ReplaceTokens
 plugins {
     id 'maven-publish'
     id 'com.github.ben-manes.versions' version '0.17.0'
-    id 'com.github.johnrengelman.shadow' version '2.0.2'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
 
 def versionInfo = [major: '3', minor: '1', revision: '0']
@@ -102,7 +102,7 @@ allprojects {
         //because they are defined later in the buildscript.
         // Trying to specify these at "script-refresh" time
         //will cause the refresh to fail.
-        dependsOn { javadocJar }
+//        dependsOn { javadocJar }
         dependsOn { sourceJar }
         dependsOn { shadowJar }
     }

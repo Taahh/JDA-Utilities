@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 dependencies {
-    compileOnly jda()
-    compile findbugs()
-    compile json()
+    implementation jda()
+    implementation findbugs()
+    implementation json()
 
-    compile commons()
+    implementation commons()
 }

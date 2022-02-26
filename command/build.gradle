@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 dependencies {
-    compileOnly jda()
-    compile slf4j()
-    compile okhttp()
-    compile findbugs()
-    compile json()
+    implementation jda()
+    implementation slf4j()
+    implementation okhttp()
+    implementation findbugs()
+    implementation json()
 
-    compile commons()
+    implementation commons()
 }
 
 javadoc {
